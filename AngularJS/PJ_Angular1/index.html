@@ -1,0 +1,31 @@
+<html>
+<head>
+	<script src="lib/AngularJs/angular.min.js"></script>
+	<script src="lib/AngularJs/app.js"></script>
+</head>
+<body>
+	<div ng-app="myModule">
+		<div  ng-controller="myController">
+			<input type="text" ng-model="employee.FirstName"> <br>
+			<input type="text" ng-model="employee.LastName"> <br>
+			<input type="text" ng-model="employee.Gender" > <br>
+			First Name: {{employee.FirstName}} <br>
+			Last Name: {{employee.LastName}} <br>
+			Gender: {{employee.Gender}} <br>
+		</div>
+		<br>
+		<div  ng-controller="myController1">
+			<input type="text" ng-model="name">
+			<button ng-click="sayHello()">Click</button>
+			<div>{{name}}</div>
+		</div>
+		<br>
+		<div  ng-controller="myController2">
+			<input type="text" ng-model="name">
+			<button ng-click="sayHello()">Click</button>
+			<div>{{name}}</div>
+		</div>
+	</div>
+		
+</body>
+</html>
